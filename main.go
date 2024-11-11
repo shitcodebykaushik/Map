@@ -24,7 +24,7 @@ func main() {
     routes.AuthRoutes(router)
 
     // Start server on port 8080
-    if err := router.Run(":8080"); err != nil {
+    if err := router.Run(":8084"); err != nil {
         log.Fatal("Failed to start server:", err)
     }
 }

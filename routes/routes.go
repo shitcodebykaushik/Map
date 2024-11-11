@@ -10,5 +10,7 @@ func AuthRoutes(router *gin.Engine) {
     {
         auth.POST("/signup", controllers.Signup)
         auth.POST("/login", controllers.Login) // Add the login endpoint
+       auth.GET("/user/:id", controllers.GetUserProfile) // ID of the user
+
     }
 }
